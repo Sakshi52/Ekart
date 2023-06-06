@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block 'main' %}
+
+        <h3 class="text mx-auto text-center mt-5 text-info-emphasis">Good to See you Again</h3><hr>
+  
+
+<form method="post">
+<div class="row mt-5 mx-auto shadow-lg bg-body-tertiary rounded" style="width:689px;height:296px">
+    <div class="mb-3 row mt-3 mx-5">
+        <label for="1" class="col-sm-2 col-form-label"><strong>Username: </strong></label>
+        <div class="col-auto mx-5" >
+          <input type="text" name="uname" class="form-control border border-dark p-2 mb-2 border-opacity-50" id="1" placeholder="Enter Your Username">
+        </div>
+      </div>
+      <div class="mb-3 row mx-5">
+        <label for="2" class="col-sm-2 col-form-label"><strong>Password: </strong></label>
+        <div class="col-auto mx-5">
+          <input type="password" name="upass" class="form-control border border-dark p-2 mb-2 border-opacity-50" id="2" placeholder="Enter your Password">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 mx-5">
+          <h6><a href="/resetpass">Forgot Password?</a></h6>
+        </div>
+      </div>
+      <div class="button mb-3 row">
+        <div class="col-sm-2 mx-auto">
+        <button type="Submit" class="btn btn-primary btn-lg">Login</button> 
+        </div>
+      </div>
+      
+        <h6 class="text-center"><a href="/register">New to Ekart? Create account here</a></h6>
+      
+      
+
+
+    </div><!---LoginPage end-->
+
+    
+</form>
+{% endblock 'main' %}
